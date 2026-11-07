@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vanderbilt Research Commons: one graph, one tool registry, one chat.">
+  <title>Vanderbilt Research Commons</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Cpath d=%27M8 1l7 7-7 7-7-7z%27 fill=%27%232f5d50%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="btn ghost icon only-narrow" id="nav-toggle" type="button" aria-label="Menu">☰</button>
+    <a class="brand" href="#/home"><span class="logo">V</span> Research Commons</a>
+    <div class="project" id="project-name">Loading…</div>
+    <div class="focus-tray" id="focus-tray" aria-label="Focus set"></div>
+    <span class="conn" id="conn" title="Live event stream">●</span>
+    <button class="btn ghost" id="chat-toggle" type="button" aria-controls="chat-dock">Chat</button>
+  </header>
+  <div class="shell">
+    <nav class="sidenav" id="sidenav" aria-label="Main"></nav>
+    <main id="view" tabindex="-1"></main>
+    <aside class="chat-dock" id="chat-dock" aria-label="Unified chat"></aside>
+  </div>
+  <div id="toasts" aria-live="polite"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
